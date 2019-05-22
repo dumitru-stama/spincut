@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/test_overlay.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+margin_left = -10.0
+margin_top = -10.0
+script = ExtResource( 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 745.799
+margin_top = 325.709
+margin_right = 1045.8
+margin_bottom = 510.709
+text = "Quit Overlay"
+
+[node name="goto_scene3" type="Button" parent="."]
+margin_left = 784.954
+margin_top = 552.851
+margin_right = 1000.95
+margin_bottom = 722.851
+text = "GOTO Scene_3"
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="goto_scene3" to="." method="_on_goto_scene3_pressed"]
